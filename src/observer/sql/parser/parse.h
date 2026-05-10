@@ -18,3 +18,6 @@ See the Mulan PSL v2 for more details. */
 #include "sql/parser/parse_defs.h"
 
 RC parse(const char *st, ParsedSqlResult *sql_result);
+typedef struct DropTableStmt {
+    const char *table_name; 
+} DropTableStmt;
